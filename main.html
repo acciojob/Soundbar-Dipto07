@@ -8,18 +8,24 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<div id="buttons">
-    <button class="btn" onclick="playSound('sound1.mp3')">Sound 1</button>
-    <button class="btn" onclick="playSound('sound2.mp3')">Sound 2</button>
-    <button class="btn" onclick="playSound('sound3.mp3')">Sound 3</button>
-    <button class="btn stop" onclick="stopAllSounds()">Stop</button>
-</div>
 
-<audio id="sound1" src="sounds/sound1.mp3"></audio>
-<audio id="sound2" src="sounds/sound2.mp3"></audio>
-<audio id="sound3" src="sounds/sound3.mp3"></audio>
+	<audio  id="audio" src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
+	
+	<section id="buttons">
+		<input class="btn" type='button' value='applause' onclick='sound()'/>
+		<input class="btn" type='button' value='boo' onclick='sound()'/>
+		<input class="btn" type='button' value='gasp' onclick='sound()'/>
+		<input class="btn" type='button' value='tada' onclick='sound()'/>
+		<input class="btn" type='button' value='victory' onclick='sound()'/>
+		<input class="btn" type='button' value='wrong' onclick='sound()'/>
+		<input class="stop" type='button' value='stop' onclick='sound()'/>
+	</section>
 
     <script type="text/javascript" src="./script.js">
+		function sound() {
+	let music = document.getElementById("audio");
+	music.play();
+} 
 </script>
 
 </body>

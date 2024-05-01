@@ -1,1 +1,25 @@
 /*  your css code here. If applicable */
+/*  your css code here. If applicable */
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: violet;
+}
+#buttons{
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+input{
+	padding: 10px 20px;
+	height: 10%;
+	color: white;
+	background: #490647;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+}
